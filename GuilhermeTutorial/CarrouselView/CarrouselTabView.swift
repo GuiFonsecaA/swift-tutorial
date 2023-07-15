@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CarrouselTabView: View {
-    let ordersMock: [OrderType] = [
+    let ordersMock: [OrderType] = [
         OrderType(id: 1, name: "", image: "barbecue-banner"),
         OrderType(id: 2, name: "", image: "brazilian-meal-banner"),
         OrderType(id: 3, name: "", image: "pokes-banner"),
