@@ -15,6 +15,10 @@
 		3D9A8A142A50B6A2000A1F0B /* GuilhermeTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A8A132A50B6A2000A1F0B /* GuilhermeTutorialTests.swift */; };
 		3D9A8A1E2A50B6A2000A1F0B /* GuilhermeTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A8A1D2A50B6A2000A1F0B /* GuilhermeTutorialUITests.swift */; };
 		3D9A8A202A50B6A2000A1F0B /* GuilhermeTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A8A1F2A50B6A2000A1F0B /* GuilhermeTutorialUITestsLaunchTests.swift */; };
+		3DEA5CCA2A620FE700F440B1 /* OrderTypeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA5CC92A620FE700F440B1 /* OrderTypeGridView.swift */; };
+		3DEA5CCD2A62154300F440B1 /* OrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA5CCC2A62154300F440B1 /* OrderType.swift */; };
+		3DEA5CCF2A62170900F440B1 /* DataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA5CCE2A62170900F440B1 /* DataSourceMock.swift */; };
+		3DEA5CD12A621A6500F440B1 /* OrderTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA5CD02A621A6500F440B1 /* OrderTypeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,10 @@
 		3D9A8A192A50B6A2000A1F0B /* GuilhermeTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuilhermeTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9A8A1D2A50B6A2000A1F0B /* GuilhermeTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuilhermeTutorialUITests.swift; sourceTree = "<group>"; };
 		3D9A8A1F2A50B6A2000A1F0B /* GuilhermeTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuilhermeTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3DEA5CC92A620FE700F440B1 /* OrderTypeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeGridView.swift; sourceTree = "<group>"; };
+		3DEA5CCC2A62154300F440B1 /* OrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderType.swift; sourceTree = "<group>"; };
+		3DEA5CCE2A62170900F440B1 /* DataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceMock.swift; sourceTree = "<group>"; };
+		3DEA5CD02A621A6500F440B1 /* OrderTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +122,9 @@
 			isa = PBXGroup;
 			children = (
 				3D58745F2A62051A00AE089C /* App */,
+				3DEA5CCB2A62151600F440B1 /* Model */,
 				3D58745E2A6204FF00AE089C /* NavigationBar */,
+				3DEA5CC82A620F8000F440B1 /* GridView */,
 				3D9A8A062A50B6A2000A1F0B /* Assets.xcassets */,
 				3D9A8A082A50B6A2000A1F0B /* Preview Content */,
 			);
@@ -144,6 +154,24 @@
 				3D9A8A1F2A50B6A2000A1F0B /* GuilhermeTutorialUITestsLaunchTests.swift */,
 			);
 			path = GuilhermeTutorialUITests;
+			sourceTree = "<group>";
+		};
+		3DEA5CC82A620F8000F440B1 /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA5CC92A620FE700F440B1 /* OrderTypeGridView.swift */,
+				3DEA5CD02A621A6500F440B1 /* OrderTypeView.swift */,
+			);
+			path = GridView;
+			sourceTree = "<group>";
+		};
+		3DEA5CCB2A62151600F440B1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA5CCC2A62154300F440B1 /* OrderType.swift */,
+				3DEA5CCE2A62170900F440B1 /* DataSourceMock.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DEA5CCD2A62154300F440B1 /* OrderType.swift in Sources */,
 				3D9A8A052A50B6A0000A1F0B /* ContentView.swift in Sources */,
+				3DEA5CCF2A62170900F440B1 /* DataSourceMock.swift in Sources */,
+				3DEA5CD12A621A6500F440B1 /* OrderTypeView.swift in Sources */,
+				3DEA5CCA2A620FE700F440B1 /* OrderTypeGridView.swift in Sources */,
 				3D9A8A032A50B6A0000A1F0B /* GuilhermeTutorialApp.swift in Sources */,
 				3D5874612A62056700AE089C /* NavigationBar.swift in Sources */,
 			);
