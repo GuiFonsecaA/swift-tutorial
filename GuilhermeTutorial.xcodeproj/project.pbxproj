@@ -19,6 +19,8 @@
 		3DEA5CCD2A62154300F440B1 /* OrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA5CCC2A62154300F440B1 /* OrderType.swift */; };
 		3DEA5CCF2A62170900F440B1 /* DataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA5CCE2A62170900F440B1 /* DataSourceMock.swift */; };
 		3DEA5CD12A621A6500F440B1 /* OrderTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA5CD02A621A6500F440B1 /* OrderTypeView.swift */; };
+		3DEA5CD42A62224600F440B1 /* CarrouselItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA5CD32A62224600F440B1 /* CarrouselItemView.swift */; };
+		3DEA5CD62A62241B00F440B1 /* CarrouselTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA5CD52A62241B00F440B1 /* CarrouselTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +56,8 @@
 		3DEA5CCC2A62154300F440B1 /* OrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderType.swift; sourceTree = "<group>"; };
 		3DEA5CCE2A62170900F440B1 /* DataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceMock.swift; sourceTree = "<group>"; };
 		3DEA5CD02A621A6500F440B1 /* OrderTypeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeView.swift; sourceTree = "<group>"; };
+		3DEA5CD32A62224600F440B1 /* CarrouselItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrouselItemView.swift; sourceTree = "<group>"; };
+		3DEA5CD52A62241B00F440B1 /* CarrouselTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarrouselTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,7 @@
 				3DEA5CCB2A62151600F440B1 /* Model */,
 				3D58745E2A6204FF00AE089C /* NavigationBar */,
 				3DEA5CC82A620F8000F440B1 /* GridView */,
+				3DEA5CD22A62221A00F440B1 /* CarrouselView */,
 				3D9A8A062A50B6A2000A1F0B /* Assets.xcassets */,
 				3D9A8A082A50B6A2000A1F0B /* Preview Content */,
 			);
@@ -172,6 +177,15 @@
 				3DEA5CCE2A62170900F440B1 /* DataSourceMock.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3DEA5CD22A62221A00F440B1 /* CarrouselView */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA5CD32A62224600F440B1 /* CarrouselItemView.swift */,
+				3DEA5CD52A62241B00F440B1 /* CarrouselTabView.swift */,
+			);
+			path = CarrouselView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,8 +322,10 @@
 				3D9A8A052A50B6A0000A1F0B /* ContentView.swift in Sources */,
 				3DEA5CCF2A62170900F440B1 /* DataSourceMock.swift in Sources */,
 				3DEA5CD12A621A6500F440B1 /* OrderTypeView.swift in Sources */,
+				3DEA5CD42A62224600F440B1 /* CarrouselItemView.swift in Sources */,
 				3DEA5CCA2A620FE700F440B1 /* OrderTypeGridView.swift in Sources */,
 				3D9A8A032A50B6A0000A1F0B /* GuilhermeTutorialApp.swift in Sources */,
+				3DEA5CD62A62241B00F440B1 /* CarrouselTabView.swift in Sources */,
 				3D5874612A62056700AE089C /* NavigationBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
