@@ -139,14 +139,14 @@
 		3D9A8A012A50B6A0000A1F0B /* GuilhermeTutorial */ = {
 			isa = PBXGroup;
 			children = (
-				3DB34CD02A631FEA00B2B3DE /* ProductView */,
-				3DB34CCD2A630E6200B2B3DE /* Extension */,
 				3D58745F2A62051A00AE089C /* App */,
 				3DEA5CCB2A62151600F440B1 /* Model */,
 				3D58745E2A6204FF00AE089C /* NavigationBar */,
 				3DEA5CC82A620F8000F440B1 /* GridView */,
 				3DEA5CD22A62221A00F440B1 /* CarrouselView */,
 				3DEA5CD72A62417400F440B1 /* StoresView */,
+				3DB34CCD2A630E6200B2B3DE /* Extension */,
+				3DB34CD02A631FEA00B2B3DE /* ProductView */,
 				3D9A8A062A50B6A2000A1F0B /* Assets.xcassets */,
 				3D9A8A082A50B6A2000A1F0B /* Preview Content */,
 			);
