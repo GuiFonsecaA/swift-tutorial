@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProductDetailQuantityView: View {
-    @State var productQuantity = 1
+    @Binding var productQuantity: Int
     var body: some View {
         VStack(spacing:16) {
             Text("Quantidade")
@@ -42,6 +42,6 @@ struct ProductDetailQuantityView: View {
 
 struct ProductDetailQuantityView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductDetailQuantityView()
+        ProductDetailQuantityView(productQuantity: .constant(1))
     }
 }
