@@ -19,6 +19,7 @@
 		3DB34CCA2A62DDAB00B2B3DE /* StoreType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB34CC92A62DDAB00B2B3DE /* StoreType.swift */; };
 		3DB34CCC2A62DE0200B2B3DE /* ProductType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB34CCB2A62DE0200B2B3DE /* ProductType.swift */; };
 		3DB34CCF2A630E7B00B2B3DE /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB34CCE2A630E7B00B2B3DE /* Double+.swift */; };
+		3DB34CD22A631FFF00B2B3DE /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB34CD12A631FFF00B2B3DE /* ProductDetailView.swift */; };
 		3DEA5CCA2A620FE700F440B1 /* OrderTypeGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA5CC92A620FE700F440B1 /* OrderTypeGridView.swift */; };
 		3DEA5CCD2A62154300F440B1 /* OrderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA5CCC2A62154300F440B1 /* OrderType.swift */; };
 		3DEA5CCF2A62170900F440B1 /* DataSourceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEA5CCE2A62170900F440B1 /* DataSourceMock.swift */; };
@@ -62,6 +63,7 @@
 		3DB34CC92A62DDAB00B2B3DE /* StoreType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreType.swift; sourceTree = "<group>"; };
 		3DB34CCB2A62DE0200B2B3DE /* ProductType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductType.swift; sourceTree = "<group>"; };
 		3DB34CCE2A630E7B00B2B3DE /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
+		3DB34CD12A631FFF00B2B3DE /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		3DEA5CC92A620FE700F440B1 /* OrderTypeGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTypeGridView.swift; sourceTree = "<group>"; };
 		3DEA5CCC2A62154300F440B1 /* OrderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderType.swift; sourceTree = "<group>"; };
 		3DEA5CCE2A62170900F440B1 /* DataSourceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceMock.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		3D9A8A012A50B6A0000A1F0B /* GuilhermeTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				3DB34CD02A631FEA00B2B3DE /* ProductView */,
 				3DB34CCD2A630E6200B2B3DE /* Extension */,
 				3D58745F2A62051A00AE089C /* App */,
 				3DEA5CCB2A62151600F440B1 /* Model */,
@@ -181,6 +184,14 @@
 				3DB34CCE2A630E7B00B2B3DE /* Double+.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		3DB34CD02A631FEA00B2B3DE /* ProductView */ = {
+			isa = PBXGroup;
+			children = (
+				3DB34CD12A631FFF00B2B3DE /* ProductDetailView.swift */,
+			);
+			path = ProductView;
 			sourceTree = "<group>";
 		};
 		3DEA5CC82A620F8000F440B1 /* GridView */ = {
@@ -353,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DEA5CCD2A62154300F440B1 /* OrderType.swift in Sources */,
+				3DB34CD22A631FFF00B2B3DE /* ProductDetailView.swift in Sources */,
 				3DB34CCC2A62DE0200B2B3DE /* ProductType.swift in Sources */,
 				3D9A8A052A50B6A0000A1F0B /* ContentView.swift in Sources */,
 				3DEA5CCF2A62170900F440B1 /* DataSourceMock.swift in Sources */,
