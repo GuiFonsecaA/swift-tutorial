@@ -11,6 +11,8 @@ struct HomeView: View {
     
     @State private var isAnimating = false
     @State private var imageOffSet: CGSize = .zero
+    @State private var buttonOffSet: CGFloat = 0
+    @State private var showSecondScreen = false
     let buttonHeight: CGFloat = 80
     
     var body: some View {
@@ -32,7 +34,7 @@ struct HomeView: View {
                     .opacity(isAnimating ? 0.5 : 0)
                 VStack {
                     Text("Chefe Delivery")
-                        .font(.system(size:40))
+                        .font(.system(size:48))
                         .fontWeight(.heavy)
                         .foregroundColor(Color("ColorRed"))
                         .opacity(isAnimating ? 1 : 0)
@@ -76,11 +78,19 @@ struct HomeView: View {
                             .fill(Color("ColorRed").opacity(0.2))
                             .padding(8)
                         
-                        Text("Descobra mais")
+                        Text("Descubra mais")
                             .font(.title2)
                             .bold()
                             .foregroundColor(Color("ColorRedDark"))
                             .offset(x: 20)
+                        
+                        HStack {
+                            Capsule()
+                                .fill(Color("ColorRed"))
+                                .frame(width: buttonOffSet + buttonHeight)
+                            
+                            Spacer()
+                        }
                         
                         HStack{
                             ZStack{
@@ -98,15 +108,42 @@ struct HomeView: View {
                             }
                             Spacer()
                         }
+                        .offset(x: buttonOffSet)
+                        .gesture(
+                            DragGesture()
+                                .onChanged({ gesture in
+                                    if gesture.translation.width >= 0
+                                        && buttonOffSet <= (geometry.size.width - 60) - buttonHeight{
+                                        withAnimation(.easeInOut(duration: 0.25)){
+                                            buttonOffSet = gesture.translation.width
+                                        }
+                                    }
+                                })
+                                .onEnded({ _ in
+                                    if buttonOffSet > (geometry.size.width - 60) / 2 {
+                                        showSecondScreen = true
+                                    }
+                                    else {
+                                        withAnimation(.easeInOut(duration: 0.25)){
+                                            buttonOffSet = 0
+                                        }
+                                    }
+                                })
+                        )
                     }
                     .frame(width: geometry.size.width - 60,
-                    height: buttonHeight)
+                           height: buttonHeight)
+                    .opacity(isAnimating ? 1 : 0)
+                    .offset(y: isAnimating ? 0 : 100)
                 }
                 .onAppear{
                     withAnimation(.easeInOut(duration: 4.5)){
                         isAnimating = true
                     }
                 }
+            }
+            .fullScreenCover(isPresented: $showSecondScreen) {
+                ContentView()
             }
         }
     }
