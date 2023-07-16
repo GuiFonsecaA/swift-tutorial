@@ -16,16 +16,18 @@ struct HomeView: View {
             ZStack {
                 Circle()
                     .foregroundColor(Color("ColorRed"))
-                    .frame(width: 200)
-                    .position(x: 50, y:100)
+                    .frame(width: isAnimating ? 200 : 0)
+                    .position(x: isAnimating ? 50 : -50, y: isAnimating ? 100 : -100)
                     .blur(radius: 60)
-                    .opacity(0.5)
+                    .opacity(isAnimating ? 0.5 : 0)
                 Circle()
                     .foregroundColor(Color("ColorRedDark"))
-                    .frame(width: 200)
-                    .position(x: geometry.size.width - 50, y: geometry.size.height - 50)
+                    .frame(width: isAnimating ? 200 : 0)
+                    .position(x: isAnimating ? geometry.size.width - 50 : geometry.size.width + 50,
+                              y: isAnimating ? geometry.size.height - 50 :
+                                geometry.size.height + 50)
                     .blur(radius: 60)
-                    .opacity(0.5)
+                    .opacity(isAnimating ? 0.5 : 0)
                 VStack {
                     Text("Chefe Delivery")
                         .font(.system(size:40))
@@ -46,7 +48,7 @@ struct HomeView: View {
                     Spacer()
                 }
                 .onAppear{
-                    withAnimation(.easeInOut(duration: 1.5)){
+                    withAnimation(.easeInOut(duration: 4.5)){
                         isAnimating = true
                     }
             }
