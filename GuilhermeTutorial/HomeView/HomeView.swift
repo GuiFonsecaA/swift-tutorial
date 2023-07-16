@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @State private var isAnimating = false
+    @State private var imageOffSet: CGSize = .zero
     
     var body: some View {
         GeometryReader { geometry in
@@ -45,13 +46,32 @@ struct HomeView: View {
                         .offset(y: isAnimating ? 0 : -40)
                     
                     
-                    Spacer()
+                    Image("image")
+                        .resizable()
+                        .scaledToFit()
+                        .shadow(radius: 60)
+                        .padding(isAnimating ? 32 : 92)
+                        .opacity(isAnimating ? 1 : 0)
+                        .offset(x: imageOffSet.width, y: imageOffSet.height)
+                        .gesture(
+                            DragGesture()
+                                .onChanged({ gesture in
+                                    withAnimation(.easeInOut(duration: 0.5)){
+                                        imageOffSet = gesture.translation
+                                    }
+                                })
+                                .onEnded({ _ in
+                                    withAnimation(.easeInOut(duration: 0.5)){
+                                        imageOffSet = .zero
+                                    }
+                                })
+                        )
                 }
                 .onAppear{
                     withAnimation(.easeInOut(duration: 4.5)){
                         isAnimating = true
                     }
-            }
+                }
             }
         }
     }
